@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using GameEnums;
+﻿using GameEnums;
 
 int choice;
 GameDifficulty difficulty;
@@ -34,11 +33,13 @@ int ReturnInteger(string input)
             else
             {
                 Console.Write("Please enter a value between 1-3: ");
+            input = Console.ReadLine();
             }
         }
         catch
         {
             Console.Write("Please enter a valid Integer: ");
+            input = Console.ReadLine();
         }
     }
 }
